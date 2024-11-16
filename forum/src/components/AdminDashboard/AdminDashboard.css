@@ -1,0 +1,157 @@
+.board {
+    background-image: url('../../resources/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-dashboard h1 {
+    text-align: center;
+    color: #efe5e5;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.search-input {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: border-color 0.3s;
+    text-align: center;
+    margin-left: 33%;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.user-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #1b1414a6;
+    transition: box-shadow 0.3s;
+    box-sizing: border-box;
+    align-items: center;
+    height: 220px;
+}
+
+.user-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-email-text {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.admin-text {
+    font-size: 1.5rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.promote-button {
+    background-color: #0e7225;
+    color: white;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 45%;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promote-button:hover {
+    background-color: rgb(47, 163, 159);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.user-buttons button {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    flex: 1;
+    min-width: 80px;
+    transition: background-color 0.3s;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.block-button {
+    background-color: #ffc107;
+    color: white;
+}
+
+.block-button:hover {
+    background-color: #e0a800;
+}
+
+.unblock-button {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.unblock-button:hover {
+    background-color: #138496;
+}
